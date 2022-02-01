@@ -1,2 +1,2 @@
 # portfolioCode
-Portfolio website. Developed with HTML, CSS, Javascript, SASS and Webpack.
+Portfolio website. Developed with HTML, CSS - SASS, and Javascript.
