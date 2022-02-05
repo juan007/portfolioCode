@@ -1,0 +1,122 @@
+$mobile-max-width: 400px;
+$mobile-font-size: 1em;
+
+/* On smaller screens */
+@media only screen and (max-width: 450px) {
+    .prev, .next,.text {font-size: 11px}
+    .page {
+        width: 70%;
+        margin-left: 0;
+        margin-right: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 630px 630px 630px 630px 120px;
+        grid-gap: 0px;
+    }
+    
+    //NAV
+    .navigation {
+       display: none;
+    }
+    
+    //HOME
+    .home {
+        max-width: $mobile-max-width;
+
+        &__salute-profile-pic {
+            
+            grid-gap: 0px;
+
+            &__left {
+                &__salute {
+                width: 220px;
+                height: 135px;
+                
+                }
+            }
+            &__right {
+                &__profile-pic {
+                    width: 350px;
+                    height: 397px;
+                }
+            }
+        }
+
+        &__contact-sign {
+            
+            flex-direction: column;
+            flex-wrap: nowrap;
+            
+            &__sign {
+                display: none;
+            }
+        }
+    }
+
+    //ABOUTME
+    .aboutme {
+        font-size: $mobile-font-size;
+        max-width: $mobile-max-width;
+        padding-left: 15px;
+        &__header {
+            text-align: center;
+        }
+    }
+
+    //SKILLS
+    .skills {
+        font-size: $mobile-font-size;
+        max-width: $mobile-max-width;
+        padding-left: 15px;
+
+        &__images {
+            height: 100px;
+            width: 100px;
+            padding: 5px;
+        }
+        
+    }
+
+
+    /* Slideshow container */
+.work__slideshow-container {
+    max-width: $mobile-max-width;
+    position: relative;
+    margin: auto;
+    
+  }
+    //WORK
+    .work {
+        flex-wrap: nowrap;
+        padding-left: 15px;
+        font-size: $mobile-font-size;
+        max-width: $mobile-max-width;
+    }
+
+    .divide{
+        display:grid;
+        grid-gap: 0px;
+        grid-template-rows: 350px 150px;
+        grid-template-columns: 375px;
+    }
+
+    .slide-images {
+        width: 300px; 
+        height: 280px; 
+        padding-bottom: 10px;
+        padding-left: 70px;
+    }
+
+    .prev {
+        padding-left: 15px;
+    }
+
+    .next {
+        padding-right: 15px;
+    }
+
+    //FOOTER
+    .footer {
+        font-size: $mobile-font-size;
+    }
+}

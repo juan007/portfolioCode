@@ -1,0 +1,48 @@
+@use "./mixins";
+//HOME
+.home {
+    @include mixins.flex-display();
+    flex-direction: column;
+    flex-wrap: nowrap;
+ 
+    &__salute-profile-pic {
+        @include mixins.flex-display();
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 100px;
+
+        &__left {
+            &__salute {
+            width: 300px;
+            height: 184px;
+            
+            }
+        }
+        &__right {
+            &__profile-pic {
+                width: 484px;
+                height: 550px;
+            }
+        }
+    }
+    &__contact-sign {
+        @include mixins.flex-display();
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        &__contact {
+            flex-grow: 0.5;
+        }
+        
+        &__sign {
+            &__image {
+                width: 180px;
+                height: 87px;
+            }
+        }
+    }
+}

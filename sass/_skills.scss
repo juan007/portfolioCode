@@ -1,0 +1,26 @@
+@use "./mixins";
+//SKILLS
+.skills {
+    @include mixins.flex-display();
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 1.5em;
+    
+    &__header {
+        text-align: center;
+    }
+    &__images {
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+    }
+    &__wrapimages {
+        //border-style: solid;
+        border-radius: 10px;
+        background-color: rgb(236, 235, 235);
+        padding: 40px;
+    }
+}

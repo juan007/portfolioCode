@@ -1,0 +1,35 @@
+@use "./mixins";
+
+//ABOUT ME
+.aboutme {
+    @include mixins.flex-display();
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: left;
+    text-align: justify;
+    font-size: 1.5em;
+    
+    &__header {
+        text-align: center;
+    }
+    &__paragraph {
+        //border-style: solid;
+        border-radius: 10px;
+        background-color: rgb(236, 235, 235);
+        padding: 50px;
+    }
+    &__download {
+        text-align: center;
+    }
+
+    &__download a {
+        padding: 5px;
+    }
+    
+    &__download a:visited,
+    &__download a:link {
+        text-decoration: none;
+        color: black;
+    }
+}
