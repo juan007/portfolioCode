@@ -58,6 +58,11 @@ function onDot4(e)
     currentSlide(4);
 }
 
+function onDot5(e)
+{
+    currentSlide(5);
+}
+
 function main()
 {
     showSlides(slideIndex);
@@ -67,6 +72,7 @@ function main()
     document.getElementById("btnDot2").addEventListener("click",onDot2);
     document.getElementById("btnDot3").addEventListener("click",onDot3);
     document.getElementById("btnDot4").addEventListener("click",onDot4);
+    document.getElementById("btnDot5").addEventListener("click",onDot5);
 }
 
 main();

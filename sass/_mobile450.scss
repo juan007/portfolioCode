@@ -10,13 +10,17 @@ $mobile-font-size: 1em;
         margin-right: 0;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 630px 630px 630px 630px 120px;
+        grid-template-rows: 60px 630px 630px 630px 630px 120px;
         grid-gap: 0px;
     }
     
-    //NAV
-    .navigation {
-       display: none;
+     //NAV
+   .navigation {
+        display: none;
+    }
+ 
+ .mobile-menu {
+        display: block;
     }
     
     //HOME
