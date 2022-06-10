@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="EN">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,23 +9,44 @@
 		<link rel="stylesheet" type="text/css" href="./bundle.css" />
     </head>
     <body >
+        <div class="navigation">
+            <div class="navigation__item"><a href="#home">HOME</a></div>
+            <div class="navigation__item"><a href="#about">ABOUT</a></div>
+            <div class="navigation__item"><a href="#skills">SKILLS</a></div>
+            <div class="navigation__item"><a href="#work">WORK</a></div>
+        </div>
         <div class="page" id="home">
-            <div class="navigation">
+            <!-- <div class="navigation">
                 <div class="navigation__item"><a href="#home">HOME</a></div>
                 <div class="navigation__item"><a href="#about">ABOUT</a></div>
                 <div class="navigation__item"><a href="#skills">SKILLS</a></div>
                 <div class="navigation__item"><a href="#work">WORK</a></div>
+            </div> -->
+            <div class="mobile-menu">
+
+                <input id="toggle" type="checkbox">
+            
+                
+                <label class="toggle-container" for="toggle">
+                 
+                  <span class="button button-toggle"></span>
+                </label>
+            
+                <!-- The Nav Menu -->
+                <nav class="nav">
+                  <a class="nav-item" href="#home">HOME</a>
+                  <a class="nav-item" href="#about">ABOUT</a>
+                  <a class="nav-item" href="#skills">SKILLS</a>
+                  <a class="nav-item" href="#work">WORK</a>
+                </nav>
             </div>
             <div class="home" >
                 <div class = "home__salute-profile-pic">
-                    <!-- <div class="home__item home__item--header">HI! I AM</div>
-                    <div class="home__item home__item--name">JUAN</div>
-                    <div class="home__item home__item--title">DEVELOPER</div> -->
                     <div class="home__salute-profile-pic__left">
-                        <img class="home__salute-profile-pic__left__salute" src="images/iamjuan.png">
+                        <img class="home__salute-profile-pic__left__salute" src="images/iamjuan.png" alt="The image contains text that reads: Hi! I am Juan, developer.">
                     </div>
                     <div class="home__salute-profile-pic__right">
-                        <img class="home__salute-profile-pic__right__profile-pic" src="images/profilepic.png">
+                        <img class="home__salute-profile-pic__right__profile-pic" src="images/profilepic.png" alt="Photo of Juan sitting in front of desk, in the desk a computer and a monitor, in the computer screen programming code can be seen.">
                     </div>
                 </div>
                 <div class = "home__contact-sign">
@@ -34,7 +55,7 @@
                             <a href="callto:90298636947"><img alt="Phone" src="images/phone-icon.png"></a>
                     </div>
                     <div class="home__contact-sign__sign">
-                        <img class="home__contact-sign__sign__image" src="images/signature.png">
+                        <img class="home__contact-sign__sign__image" src="images/signature.png" alt="The image contains Juan's signature">
                     </div>
                 </div>
                 
@@ -42,11 +63,11 @@
             <div class="aboutme" id="about">
                 <h1 class="aboutme__header">ABOUT ME</h1>
                 <p class="aboutme__paragraph">
-                    I have several years of experience in <strong>software development</strong>, mainly in Systems Analysis.  
-                    Although I enjoy this role, I am looking for a co-op/internship opportunity that is more focused on web 
-                    development or <strong>coding</strong> in general.  
-                    I consider coding to be my <strong>passion</strong>; this is one of the reasons why I am currently enrolled in the 
-                    IT Web Development program at NSCC.
+                    I have several years of experience in Systems Analysis. While I enjoy the activities that Systems Analysis requires, 
+                    I consider programming to be my <strong>passion</strong>; therefore, I decided to shift my career and go back to coding. Currently I am enrolled in the <strong>IT Web Programming</strong> 
+                    program at NSCC. I am looking for a <strong>coop/internship</strong> opportunity in anything related to programming. 
+                    I believe the skills acquired in my Systems Analysis roles can come in very handy, giving me an edge and a <strong>360 view</strong> in 
+                    any programming role I am assigned.
                 </p>
                 <div class="aboutme__download">
 					<a href="https://www.linkedin.com/in/juanroldan2021/" target="_blank">LINKEDIN</a>|<a href="https://github.com/juan007" target="_blank">GITHUB</a>
@@ -55,11 +76,11 @@
             <div class="skills" id="skills">
                 <h1 class="skills__header">SKILLS</h1>
                 <div class="skills__wrapimages">
-                    <img class="skills__images" alt="mysql" src="images/mysql-logo.png">
-                    <img class="skills__images" alt="html-css-js" src="images/html-css-js.ico">
-                    <img class="skills__images" alt="java" src="images/java-logo.png">
-                    <img class="skills__images" alt="python" src="images/python-logo.png">
-                    <img class="skills__images" alt="csharp" src="images/csharp-logo.png">
+                    <img class="skills__images" src="images/mysql-logo.png" alt="MySQL logo">
+                    <img class="skills__images" src="images/html-css-js.ico" alt="HTML CSS Javascript logos">
+                    <img class="skills__images" src="images/java-logo.png" alt="Java logo">
+                    <img class="skills__images" src="images/python-logo.png" alt="Python logo">
+                    <img class="skills__images" src="images/csharp-logo.png" alt="C Sharp logo">
                 </div>
             </div>
             <div class="work" id="work">
@@ -71,18 +92,7 @@
                     
                     <div class="mySlides fade">
                         <div class="divide">
-                            <img src="images/work1.jpg" class="slide-images">
-                            <div class="slide-text"><strong>Interactive Story</strong><br><br>Game developed in <strong>Python</strong>. Takes the user through different story paths depending on the user's decisions.  The story is loaded from a CVS file and the storyline can be dynamically defined.  It has a save and load functionality.
-                                <div class="github">
-                                    <a href="https://github.com/juan007/interactiveStory" target="_blank"><img alt="GitHub" src="images/github-icon.png"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="divide">
-                            <img src="images/work2.jpg" class="slide-images">
+                            <img src="images/work2.jpg" class="slide-images" alt="Person writing CV on whiteboard.">
                             <div class="slide-text">
                                 <strong>Portfolio</strong><br><br> This website.  Developed with <strong>HTML, CSS-SASS, and Javascript</strong>.
                                 <div class="github">
@@ -91,10 +101,36 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="divide">
+                            <img src="images/work5.jpg" class="slide-images" alt="Screen capture of tutorial">
+                            <div class="slide-text">
+                                <strong>APACHE - PHP - MYQL</strong><br><br> Repository with <strong>markdown</strong> documentation of steb by step tutorials inslalling APACHE, PHP, AND MYSQL in Windows 10.
+                                <div class="github">
+                                    <a href="https://github.com/juan007/apache_php_mysql_howto/blob/main/README.md" target="_blank"><img alt="GitHub" src="images/github-icon.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="mySlides fade">
                         <div class="divide">
-                            <img src="images/work3.jpg" class="slide-images">
+                            <img src="images/work1.jpg" class="slide-images" alt="Screen capture of interactive story program">
+                            <div class="slide-text"><strong>Interactive Story</strong><br><br>Game developed in <strong>Python</strong>. Takes the user through different story paths depending on the user's decisions.  The story is loaded from a CVS file and the storyline can be dynamically defined.  It has a save and load functionality.
+                                <div class="github">
+                                    <a href="https://github.com/juan007/interactiveStory" target="_blank"><img alt="GitHub" src="images/github-icon.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="mySlides fade">
+                        <div class="divide">
+                            <img src="images/work3.jpg" class="slide-images" alt="Screen capture of guessing game program">
                             <div class="slide-text">
                                 <strong>Guessing Game</strong><br><br> Game developed with <strong>Python</strong>.  User must guess number according to program hints.
                                 <div class="github">
@@ -106,7 +142,7 @@
 
                     <div class="mySlides fade">
                         <div class="divide">
-                            <img src="images/work4.jpg" class="slide-images">
+                            <img src="images/work4.jpg" class="slide-images" alt="Screen capture of compliment generator program">
                             <div class="slide-text">
                                 <strong>Compliment Generator</strong><br><br> Program developed with <strong>Python</strong>.  User enters number of compliments, person's name and number of adjectives.  The program will output random compliments according to the user's input.
                                 <div class="github">
@@ -126,7 +162,8 @@
                     <span class="dot" id="btnDot1"></span>
                     <span class="dot" id="btnDot2"></span>
                     <span class="dot" id="btnDot3"></span>
-                    <span class="dot" id="btnDot4" id="work-m"></span>
+                    <span class="dot" id="btnDot4"></span>
+                    <span class="dot" id="btnDot5"></span>
                 </div>
             </div>
             <div class="footer" style="height: 100%;">
@@ -137,6 +174,6 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="./bundle.js"></script>
+        <script src="./bundle.js"></script>
     </body>
 </html>
